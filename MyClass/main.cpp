@@ -2,13 +2,13 @@
 #include <string>
 #include "MyClass.hpp"
 #include "Shape.hpp"
-#include "Account.hpp"
+#include "Account_moj.hpp"
 #include "Student.hpp"
 #include<iomanip>
 
 
 
-void zad21() {
+void shape() {
 	MyClass o1, o2; // tworzymy dwa obiekty
 	o1.setVariable(16); // w o1 zmieniamy wartosc, o2 zostaje domyslnie
 	int value = o1.getVariable(); //pobranie wartosci
@@ -22,6 +22,14 @@ void zad21() {
 
 	Rectangle rect2(5, 8); //z konstruktorem parametryzowanym
 	std::cout << rect2.getField() << " " << rect2.getCircuit() << std::endl;
+	 
+	Point p1, p2;
+	p1.x = 2;
+	p1.y = 10;
+	p2.x = 2;
+	p2.y = 8;
+	Rectangle rect3(p1, p2 );
+	std::cout << rect3.getField() << " " << rect3.getCircuit() << std::endl;
 
 	Circle cir(6);  
 	std::cout << cir.getField() << " " << cir.getCircuit() << std::endl;
@@ -30,7 +38,7 @@ void zad21() {
 	std::cout << tri.getField() << " " << tri.getCircuit() << std::endl;
 }
 
-int main() {
+void zad22() {
 	Account prv;
 	prv.deposit(150);	// 150
 	//prv.deposit(-10);	// warto obsluzyc
@@ -50,6 +58,7 @@ int main() {
 	std::cout << prv2.getBalance() << " " << cash2 << std::endl;
 	
 	Account prv3;
+	Account prv4(prv3);
 	prv3.deposit(150);
 	std::cout << prv3.getBalance() << std::endl;
 	int cash3 = prv3.withdraw(100);
@@ -84,4 +93,10 @@ void zad23()
 	s1.setGrades(tab, size, grade);
 	std::cout << "Średnia tego studenta wyniosi: "<< std::fixed << std::setprecision(2) << s1.getAverage();
 	
+}
+
+int main()
+{
+	Student magda("Zielona", 7);
+	std::cout << ;
 }

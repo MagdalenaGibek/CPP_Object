@@ -18,30 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Account_moj.hpp" />
-    <ClInclude Include="Student.hpp" />
-    <ClInclude Include="Student_moj.hpp" />
-    <ClInclude Include="MyClass.hpp" />
-    <ClInclude Include="Shape.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Account_moj.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MyClass.cpp" />
-    <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="Bank.cpp" />
-    <ClCompile Include="Student.cpp" />
-    <ClCompile Include="Student_moj.cpp" />
-    <ClCompile Include="ThisExample.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4b5d57be-a806-401a-b80a-1b394958c6e1}</ProjectGuid>
-    <RootNamespace>Zad01</RootNamespace>
+    <ProjectGuid>{2d1db076-a99c-4846-b139-bc633da33202}</ProjectGuid>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>MyClass</ProjectName>
+    <ProjectName>Car</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -156,6 +139,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Car.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

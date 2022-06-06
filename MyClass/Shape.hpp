@@ -1,16 +1,25 @@
 #pragma once
 #define _USE_MATH_DEFINES 
 
+struct Point
+{
+	int x, y;
+};
+
 class Rectangle 
 {
 	int a = 0, b = 0;
 public:
 	Rectangle();
 	Rectangle(int a, int b);
+	Rectangle(Point ur, Point ll);
 	void setDimensions();
 	int getField();
 	int getCircuit();
 };
+
+
+
 class Circle
 {
 	int r = 0;

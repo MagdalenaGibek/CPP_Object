@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Account.hpp">
+    <ClInclude Include="Account_moj.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyClass.hpp">
@@ -24,12 +24,15 @@
     <ClInclude Include="Shape.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Student_moj.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Student.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Account.cpp">
+    <ClCompile Include="Account_moj.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
@@ -42,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ThisExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student_moj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bank.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Student.cpp">

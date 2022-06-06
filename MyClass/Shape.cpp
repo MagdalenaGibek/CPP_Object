@@ -8,6 +8,7 @@
 //gdybysmy nie mieli konstruktora parametryzowanego - ten by sie sam wygenerowal
 Rectangle::Rectangle()
 {
+
 }
 
 Rectangle::Rectangle(int a, int b)
@@ -15,6 +16,15 @@ Rectangle::Rectangle(int a, int b)
     this->a = a;
     this->b = b;
 }
+
+Rectangle::Rectangle(Point ur, Point ll)
+{
+    int width = abs(ur.x - ll.x);
+    int height = abs(ur.y - ll.y);
+
+    this->a = width;
+    this->b = height;
+};
 
 void Rectangle::setDimensions()
 {

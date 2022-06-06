@@ -1,17 +1,25 @@
 #pragma once
-#include<string>
 
-const unsigned int size = 5;
+class Student {
+	class Address {
+	public:
+		std::string street;
+		int houseNo;
+	};
 
-class Student
-{
-	std::string name, surname;
-	int tab[size] = {};
-
+	Address address;
+	int* grades = nullptr;
+	int noOfGrades = 0; //maxGrades
+	int index = 0;
 public:
-	Student(std::string name, std::string surname);
-	void setGrades(int tab[], const int size, int grade);
-	double getAverage();
+	Student(std::string street, int houseNo)
+	{
+		address.street = street;
+		address.houseNo = houseNo;
+	}
+	Student(int noOfGrades);
+	~Student();
+	void addGrade(int grade);
+	double average();
 };
 
-int getGrades();

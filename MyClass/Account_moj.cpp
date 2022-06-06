@@ -1,4 +1,4 @@
-#include "Account.hpp"
+#include "Account_moj.hpp"
 #include <string>
 #include <iostream>
 
@@ -16,6 +16,13 @@ Account::Account()
 Account::Account(std::string number)
 {
     this->number = number;
+}
+
+Account::Account(const Account& old)
+{
+    this->balance = old.balance;
+    this->number = old.number;
+
 }
 
 int Account::withdraw(int amount)

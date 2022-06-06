@@ -8,6 +8,7 @@ class Account {
 public:
 	Account();
 	Account(std::string number);
+	Account(const Account& old);
 	int withdraw(int amount);
 	void deposit(int amount);
 	int getBalance();
